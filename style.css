@@ -208,8 +208,35 @@ button { font: inherit; cursor: pointer; border: none; }
 
 @media (max-width: 700px) {
   .auth-main { flex-direction: column; }
+  .home-layout {
+     grid-template-columns: 1fr;
+     padding: 1rem;
+     padding-bottom: 5rem;
+    }
+  .side-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-arount;
+    background-color: 1e1f2b;
+    border-top: 1px solid #33344a;
+    padding: 0.8rem 0;
+  }
+  .suggestions {
+    display: block;
+    order: -1;
+  }
+  .suggestions ul {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1rem;
+  }
 
-  .home-layout { grid-template-columns: 1fr; padding: 1rem; }
-  .suggestions { display: none; }
-  .side-nav { flex-direction: row; justify-content: center; gap: 2rem; }
+  .suggestions li {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.7rem;
+  }
 }

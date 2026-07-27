@@ -31,7 +31,7 @@ button { font: inherit; cursor: pointer; border: none; }
 
 .auth-main .logo {
     order: -1;
-    width: 280px;
+    width: 180px;
     height: auto;
     border: none;
 }
@@ -93,8 +93,8 @@ button { font: inherit; cursor: pointer; border: none; }
 .auth-switch a { color: var(--primary); font-weight: bold; }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #fff;
   border-radius: 50%;
   object-fit: cover;
@@ -227,7 +227,14 @@ button { font: inherit; cursor: pointer; border: none; }
 .btn-add { background: none; color: var(--primary); font-weight: bold; }
 
 @media (max-width: 700px) {
-  .auth-main { flex-direction: column; }
+  .auth-main {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .auth-main .logo{
+    width: 120px !important;
+    height: auto !important;
+  }
   .home-layout {
      grid-template-columns: 1fr;
      padding: 1rem;
@@ -239,10 +246,12 @@ button { font: inherit; cursor: pointer; border: none; }
     left: 0;
     right: 0;
     flex-direction: row;
-    justify-content: space-arount;
+    justify-content: space-around;
+    align-items: center;
     background-color: 1e1f2b;
     border-top: 1px solid #33344a;
     padding: 0.8rem 0;
+    gap: 0;
   }
   .suggestions {
     display: block;

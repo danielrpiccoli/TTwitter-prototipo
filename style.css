@@ -29,11 +29,17 @@ button { font: inherit; cursor: pointer; border: none; }
   padding: 2rem;
 }
 
-.auth-main .logo {
+.logo-login {
     order: -1;
-    width: 180px;
+    width: 280px;
     height: auto;
     border: none;
+}
+
+.logo-cadastro {
+    order: 2;
+    width: 280px;
+    height: auto;
 }
 
 .auth-card {
@@ -231,9 +237,14 @@ button { font: inherit; cursor: pointer; border: none; }
     flex-direction: column !important;
     gap: 1.5rem !important;
   }
-  .auth-main .logo{
+  .logo-login{
     width: 120px !important;
     height: auto !important;
+  }
+  .logo-cadastro{
+    order: -1;
+    width: 120px;
+    margin-bottom: 1rem;
   }
   .home-layout {
      grid-template-columns: 1fr;

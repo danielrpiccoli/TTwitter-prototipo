@@ -73,14 +73,12 @@ button { font: inherit; cursor: pointer; border: none; }
 .auth-switch a { color: var(--primary); font-weight: bold; }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border: 2px solid #fff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .home-header {
@@ -91,10 +89,33 @@ button { font: inherit; cursor: pointer; border: none; }
 }
 
 .search-box {
-  max-width: 300px;
+  flex: 1;
+  max-width: 600px;
+  background-color: #1e1f2b;
+  border: 1px solid #33344a;
+  border-radius: 20px;
+  padding: 0.4rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
-.search-box input { border: none; outline: none; width: 100%; }
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.search-box svg {
+    flex-shrink: 0;
+}
+
+.search-box input::placeholder {
+  color: #8a8a8a;
+}
 
 .home-layout {
   display: grid;
@@ -116,19 +137,22 @@ button { font: inherit; cursor: pointer; border: none; }
 .feed { display: flex; flex-direction: column; gap: 1.2rem; }
 
 .compose-box {
-  background-color: var(--card-bg);
-  color: var(--text-dark);
+  background-color: transparent;
+  color: var(--text-light);
   border-radius: var(--radius);
   padding: 1rem;
+  border: 1px solid #33344a;
 }
 
 .compose-box textarea {
-  width: 100%;
+  background: transparent;
+  color: var(--text-light);
   border: none;
-  resize: none;
-  font: inherit;
-  min-height: 45px;
   outline: none;
+}
+
+.compose-box textarea::placeholder {
+  color: var(--muted);
 }
 
 .compose-actions {
@@ -142,10 +166,10 @@ button { font: inherit; cursor: pointer; border: none; }
 .compose-actions .btn-primary { width: auto; padding: 0.4rem 1.3rem; }
 
 .post {
-  background-color: var(--card-bg);
-  color: var(--text-dark);
+  background-color: transparent;
   border-radius: var(--radius);
   overflow: hidden;
+  border: 1px solid #33344a;
 }
 
 .post-image {
@@ -154,7 +178,11 @@ button { font: inherit; cursor: pointer; border: none; }
   object-fit: cover;
 }
 
-.post-body { padding: 0.9rem 1rem; }
+
+.post-body {
+  padding: 0.9rem 1rem;
+  color: var(--text-light);
+}
 
 .post-author { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; }
 
@@ -166,7 +194,9 @@ button { font: inherit; cursor: pointer; border: none; }
   flex-shrink: 0;
 }
 
-.post-author span { font-weight: bold; font-size: 0.85rem; }
+.post-author span {
+  color: var(--text-light);
+}
 .post-actions { display: flex; gap: 0.9rem; margin-left: auto; font-size: 1.1rem; }
 .post-text { font-size: 0.8rem; color: var(--muted); }
 

@@ -9,19 +9,39 @@
 </head>
 <body>
     <header class="home-header">
-        <img src="assets/logoTTwitter.png" alt="Logo TTwitter" class="logo" style="width: 60px;">
+        <img src="assets/logoTTwitter.png" alt="Logo TTwitter" class="logo">
         <form class="search-box" action="#" method="get">
-            <input type="search" name="busca" placeholder=" Buscar">
+            <input type="search" name="busca" placeholder="Buscar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2">
+                <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
         </form>
     </header>
 
     <div class="home-layout">
         <nav class="side-nav">
-            <a href="home.html"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </nav>
+            <a href="home.html">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 21a2 2 0 0 0 4 0"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" stroke-width="2">
+                    <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 1 1 9-8.4z"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>
+                </svg>
+            </a>
+</nav>
 
         <main class="feed">
 
@@ -29,6 +49,11 @@
                 <form action="#" method="post">
                     <textarea placeholder="No que está pensando...?"></textarea>
                     <div class="compose-actions">
+                        <div class="compose-tools">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M9 10l4 2-4 2z"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1-1"/></svg>
+                        </div>
                         <button type="submit" class="btn-primary">Postar</button>
                     </div>
                 </form>
@@ -39,8 +64,12 @@
                 <div class="post-body">
                     <div class="post-author">
                         <div class="avatar"></div>
-                        <spam>@usuario</spam>
-                        <div class="post-actions"></div>
+                        <span>@usuario</span>
+                        <div class="post-actions">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 1 1 9-8.4z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f2f2f2" stroke-width="2"><path d="M7 11v9H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3zm0 0l4-8a2 2 0 0 1 2 2v4h5a2 2 0 0 1 2 2l-1.5 6a2 2 0 0 1-2 1.5H9"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e0577c" stroke-width="2"><path d="M12 21s-7-4.5-9.3-9A5.4 5.4 0 0 1 12 6a5.4 5.4 0 0 1 9.3 6c-2.3 4.5-9.3 9-9.3 9z"/></svg>
+                        </div>
                     </div>
                     <p class="post-text">Lorem ipsim Lorem ipsum Lorem ipsum Lorem ipsum</p>
                 </div>

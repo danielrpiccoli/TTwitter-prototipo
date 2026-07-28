@@ -1,4 +1,4 @@
-readme_content = """# TTwitter
+# TTwitter
 
 Um protótipo moderno e responsivo de interface para uma rede social, desenvolvido com **HTML5** e **CSS** puro. O projeto conta com fluxo de navegação entre telas de autenticação (Login e Cadastro) e o feed principal (Home).
 
@@ -40,6 +40,8 @@ Um protótipo moderno e responsivo de interface para uma rede social, desenvolvi
 ├── home.html               # Página do feed / linha do tempo
 ├── style.css               # Folha de estilos global e regras responsivas
 └── README.md               # Documentação do projeto
+```
+
 
 ## Como Executar o Projeto
 

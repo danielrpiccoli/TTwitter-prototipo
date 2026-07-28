@@ -189,7 +189,11 @@ button { font: inherit; cursor: pointer; border: none; }
 }
 
 .compose-tools { font-size: 1.2rem; }
-.compose-actions .btn-primary { width: auto; padding: 0.4rem 1.3rem; }
+.compose-actions .btn-primary { 
+  width: auto; 
+  padding: 0.4rem 1.3rem; 
+  margin-bottom: 0;
+}
 
 .post {
   background-color: transparent;

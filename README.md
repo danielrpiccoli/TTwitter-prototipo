@@ -19,7 +19,7 @@ Um protótipo moderno e responsivo de interface para uma rede social, desenvolvi
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **HTML5:** Estruturação semântica do conteúdo (`<header>`, `<main>`, `<nav>`, `<aside>`, `<section>`, `<article>`).
 * **CSS3:** 
@@ -29,7 +29,7 @@ Um protótipo moderno e responsivo de interface para uma rede social, desenvolvi
 
 ---
 
-## 📁 Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```text
 ├── assets/
